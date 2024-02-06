@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio kimdoyeon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="page1">
+            <div class="page1_con">
+                <div class="page1_txt">
+                    <div class="page1_link">
+                        <p class="p1_link"><a href="https://kimdoyeonnn.github.io/portfolio2024/">Go portfolio</a></p>
+                    </div><!--page1_link-->
+                    <p>Portfolio 2024</p>
+                    <p>copyrights 2024 DesignerKim co,.ltd.
+                        all rights reserved.</p>
+                   
+                </div><!--page1_txt-->
+            </div><!--page1_con-->
+        </div><!--page1-->
+
+        <div class="page2">
+            <div class="page2_con1">
+                <div class="box1 box">
+                    <h3>WHAT</h3>
+                </div>
+                <div class="box2 box">
+                    <h3>I</h3>
+                </div>
+                <div class="box3 box">
+                    <h3><img src="images/link.png" alt=""></h3>
+                </div>
+                <div class="box4 box">
+                    <h3>DO</h3>
+                </div>
+            </div><!--page2_con1-->
+            <div class="page2_con2">
+                <h3>Contents list</h3>
+                <div class="con2_title">
+                    <p>Title</p>
+                    <p>Summary</p>
+                    <p>Contribution</p>
+                </div><!--con2_title-->
+
+                <div class="con2_marshall">
+                    <p class="m_title title">Marshall</p>
+                    <p class="m_summary summery">Introduction of item</p>
+                    <p class="m_tags tags">100% personal work</p>
+                </div><!--con2_marshall-->
+
+                <div class="con2_jacquemus">
+                    <p class="j_title title">Jacquemus</p>
+                    <p class="j_summary summery">Introduction of item</p>
+                    <p class="j_tags tags">100% personal work</p>
+                </div><!--con2_marshall-->
+
+                <div class="con2_gs">
+                    <p class="g_title title">GS건설 XI</p>
+                    <p class="g_summary summery">Company introduction</p>
+                    <p class="g_tags tags">100% personal work</p>
+                </div><!--con2_marshall-->
+
+                <div class="con2_seoul">
+                    <p class="s_title title">서울역사아카이브</p>
+                    <p class="s_summary summery">Information transfer</p>
+                    <p class="s_tags tags">100% personal work</p>
+                </div><!--con2_marshall-->
+
+            </div><!--page2_con2-->
+        </div><!--page2-->
+
+        <div class="main_content">
+            <div class="main_content_panel">
+                <div class="panel active" style="background-image: url(images/marshall2.png);">
+                    <h3 class="m_tit">Marshall</h3>
+                    <div class="m_btn panel_btn"><a href="https://kimdoyeonnn.github.io/marshall.github.io/">GO</a></div>
+                </div>
+
+                <div class="panel" style="background-image: url(images/jacquemus.png);">
+                    <h3>Jacquemus</h3>
+                    <div class="j_btn panel_btn"><a href="https://kimdoyeonnn.github.io/jacquemus.github.io/">GO</a></div>
+                </div>
+
+                <div class="panel" style="background-image: url(images/xi2.png);">
+                    <h3>GS건설 XI</h3>
+                    <div class="gs_btn panel_btn"><a href="https://kimdoyeonnn.github.io/gsxi.github.io/">GO</a></div>
+                </div>
+
+                <div class="panel" style="background-image: url(images/seoul2.png);">
+                    <h3>Seoul history museum</h3>
+                    <div class="s_btn panel_btn"><a href="https://kimdoyeonnn.github.io/seoul_museum_of_history.github.io/">GO</a></div>
+                </div>
+            </div><!--main_content_panel-->
+        </div><!--page3-->
+        <div class="footer">
+            <p>
+                copyrights 2024 DesignerKim co,.ltd. all rights reserved.</p>
+        </div>
+    </div><!--wrap-->
+
+    <script>
+         const panels = document.querySelectorAll('.panel');
+        panels.forEach((panel) => {
+        panel.addEventListener('click', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+            });
+        });
+        function removeActiveClasses() {
+        panels.forEach((panel) => {
+        panel.classList.remove('active');
+            });
+        }  
+    </script>
+</body>
+</html>
